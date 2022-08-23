@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio.me</title>
+    <link rel="icon" type="image/x-icon" href="/Images/briefcase.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Dheenul A</h1>
+        <h2>Cloud Administrator</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://www.linkedin.com/in/a-dheenul-6b6878201"target="_blank"class="social"><i class="fab fa-linkedin"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://twitter.com/Dheenul8?t=vIVwuHgqVzw3cAd8URjFFA&s=08"target="_blank"class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://instagram.com/_.dheenul._813._?igshid=YmMyMTA2M2Y="target="_blank"class="social"><i class="fab fa-instagram"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Works...</h1>
+        <section>
+            <h2>My Works</h2>
+            <p>
+                This is first project in cloud computing. In this project I was hosting hosting a static website using dockers in AWS instance by explaning the concept of cloud computing and concepts of dockers,
+                for creating my website i used languages like HTML, CSS and JS. And for hosting my website I've used tools from AWS.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;AWS</div>
+            </div>
+            <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>About...</h1>
+            <section>
+                <h2>About me</h2>
+                <p>
+                    Hello, I'm Dheenul - Student at PSG College of Arts and Science pursuing my Bachelors of Science in Computer Science, currently I'm at my final year.
+                    I enjoy meeting new people and thriving in new challenges. I am a Tech enthusiastic, community volunteer, traveller and I'm into cloud related technologies, networking, NFTs and Cryptocurrencies.
+
+                </p>
+                
+                
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                    I have some basic skills in programming languages like C, C++, Java, C#, HTML, Python and .NET Framework
+                    I have basic cloud computing skills.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>Contact...</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form action="trail.php" method="post">
+                        <input name ="name" type="text" placeholder="name" required>
+                        <input name="email" type="email" placeholder="email" required><br>
+                        <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one" name="send">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            Made on Visual Studio by Dheenul <br> 
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
